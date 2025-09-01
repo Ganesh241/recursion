@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace std;
+
+int printNumber(int num,int sum)
+{
+    if(num>4)return sum;
+    
+    sum+=num;
+    num++;
+    return printNumber(num,sum);
+    
+}
+
+int main()
+{
+   cout<< printNumber(1,0);
+
+    return 0;
+}
