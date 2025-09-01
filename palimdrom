@@ -1,0 +1,24 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool printNumber(string name,int index)
+{
+    // int n=arr.size();
+    
+    if(index>=name.length()/2)return true;
+    
+    char ch1=name[index];
+    char ch2=name[name.length()-index-1];
+    if(ch1!=ch2)return false;
+    
+    return printNumber(name,index+1);
+    
+}
+
+int main()
+{
+    string name="ganbdfbbnag";
+    cout<<printNumber(name,0);
+    return 0;
+}
