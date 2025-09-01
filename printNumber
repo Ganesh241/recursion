@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+
+void printNumber(int num)
+{
+    
+    cout<<num<<endl;
+    num++;
+    if(num>10)return;
+    
+    printNumber(num);
+      
+    
+}
+
+int main()
+{
+    printNumber(0);
+
+    return 0;
+}
