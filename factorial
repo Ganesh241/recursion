@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace std;
+
+int printNumber(int num,int fact)
+{
+    if(num>4)return fact;
+    
+    fact*=num;
+    num++;
+    return printNumber(num,fact);
+    
+}
+
+int main()
+{
+   cout<< printNumber(1,1);
+
+    return 0;
+}
